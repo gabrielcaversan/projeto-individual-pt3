@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html , body {
+    height: 100%;
+}
+
+.full-content {
+    min-height: 100%;
+    position: relative;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #E0E0E0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+/* IMAGEM DO CABEÇALHO */
+.cabecalho img {
+    width: 30px;
+}
+
+/* TITULO DO CABEÇALHO */
+.cabecalho h1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #333333
+}
+
+/* ICONE DO MENU */
+.menu-bar {
+    height: 2px;
+    width: 18px;
+    background-color: #333333;
+    margin-top: 2px;
+
+}
+
+/* CONTEUDO DO MENU OCULTO */
+.menu-lista {
+    background-color: #333333;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -80vw;
+    height: 100%;
+    width: 80%;
+    transition: all 1s ease;
+
+    text-align: right;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu-lista-conteudo {
+    padding: 5px;
+    padding-right: 25px;
+}
+
+.menu-lista-conteudo:hover {
+    background-color: #C4C4C4;
+}
+
+/* X DO MENU */
+.menu-x {
+    text-align: left;
+    padding: 15px;
+}
+
+/* BARRA DO MENU */
+.menu-lista div:nth-child(3) {
+    display: none;
+}
+
+/* COMANDO PARA O MENU APARECER */
+.menu:hover .menu-lista {
+    right: 0;
+}
+
+/* FORMULARIO */
+.novatransacao {
+    display: none;
+}
+
+.container {
+    margin: 20px;
+}
+
+.formulario ,
+.formulario div:nth-child(1),
+.formulario div:nth-child(2),
+.formulario div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .formulario-titulo ,
+.formulario .formulario-botao {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.formulario-conteudo {
+    height: 32px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* BOTAO DO FORMULARIO */
+.formulario-botao {
+    border: hidden;
+    height: 32px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* BORDA INFERIOR DO FORMULARIO */
+.container-um {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #979797;
+}
+
+/* TITULO DE TRANSAÇÕES */
+.container-dois h2 {
+    padding-top: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* TABELA */
+.tabela {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+/* BORDAS DA TABELA */
+.tabela .tabela-conteudo ,
+.tabela .tabela-conteudo-total {
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    border-bottom: 1px solid #979797;
+}
+
+.tabela .tabela-conteudo-total {
+    border-bottom: 0px;
+    border-top: 1px solid #979797;
+    margin-top: 2px;
+}
+
+/* TEXTOS DA TABELA */
+.tabela-conteudo-titulo-mercadoria{
+    padding-left: 12px;
+}
+
+.tabela-conteudo-titulo-valor {
+    text-align: center;
+    margin-left: 35%;
+    width: 49%;
+}
+
+.tabela-conteudo-valor {
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.tabela-conteudo-mercadoria {
+    width: 49%;
+    padding-left: 10px;
+}
+
+.tabela-conteudo-operador ,
+.tabela-conteudo-titulo-operador {
+    width: 2%;
+}
+
+.tabela-conteudo-valor,
+.tabela-conteudo-mercadoria,
+.tabela-conteudo-operador {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tabela-conteudo-titulo-mercadoria,
+.tabela-conteudo-titulo-valor,
+.tabela-conteudo-total {
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* TEXTO LUCRO */
+.tabela-conteudo-valor-total {
+    width: 49%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.tabela-conteudo-valor-total span {
+    display: flex;
+    justify-content: right;
+    margin-top: -10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* RODAPE */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 8px;
+    background-color: #333333;
+    width: 100%;
+}

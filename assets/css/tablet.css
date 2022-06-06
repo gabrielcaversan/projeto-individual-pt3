@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+    /* CABEÇALHO */
+    .menu-lista {
+        right: -32vw;
+        width: 32%;
+    }
+
+    /* FORMULARIO */
+    .container-um {
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+
+    .novatransacao {
+        display: flex;
+        justify-content: center;
+    }
+
+    .novatransacao h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .formulario {
+        flex-direction: row;
+    }
+
+    .formulario div:nth-child(2) {
+        width: 60%;
+    }
+
+    .formulario div:nth-child(1),
+    .formulario div:nth-child(3) {
+        width: 20%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /* BOTAO DO FORMULARIO */
+    .container-um div:nth-child(3) {
+        display: flex;
+        justify-content: right;
+    }
+
+    .formulario-botao {
+        width: 25%;
+        margin-right: 15px;
+    }
+
+    /* TABELA */
+    .tabela-conteudo-titulo-valor {
+        text-align: right;
+    }
+
+    .tabela-conteudo-mercadoria {
+        width: 30%;
+    }
+
+    .tabela-conteudo-valor,
+    .tabela-conteudo-valor-total {
+        width: 68%;
+    }
+}
