@@ -70,7 +70,25 @@ header {
     padding-right: 25px;
 }
 
-.menu-lista-conteudo:hover {
+.menu-lista a {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu-lista-conteudo .menu-lista-conteudo-botao{
+    border: 0;
+    padding: 0;
+    background-color: #333333;
+    cursor: pointer;
+    color: #FFFFFF;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu-lista-conteudo:hover,
+.menu-lista-conteudo:hover  button {
     background-color: #C4C4C4;
 }
 
@@ -102,7 +120,8 @@ header {
 .formulario ,
 .formulario div:nth-child(1),
 .formulario div:nth-child(2),
-.formulario div:nth-child(3) {
+.formulario div:nth-child(3),
+.formulario div:nth-child(4) {
     display: flex;
     flex-direction: column;
 }
@@ -125,7 +144,7 @@ header {
 }
 
 /* BOTAO DO FORMULARIO */
-.formulario-botao {
+.formulario .formulario-botao {
     border: hidden;
     height: 32px;
     background-color: #333333;
@@ -161,14 +180,14 @@ header {
 
 /* BORDAS DA TABELA */
 .tabela .tabela-conteudo ,
-.tabela .tabela-conteudo-total {
+.tabela-conteudo-total {
     display: flex;
     width: 100%;
     padding-left: 5px;
     border-bottom: 1px solid #979797;
 }
 
-.tabela .tabela-conteudo-total {
+.tabela-conteudo-total {
     border-bottom: 0px;
     border-top: 1px solid #979797;
     margin-top: 2px;

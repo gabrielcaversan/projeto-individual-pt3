@@ -27,6 +27,7 @@
     .menu-lista {
         position: absolute;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         transition: none;
@@ -48,7 +49,19 @@
         line-height: 19px;
     }
 
-    .menu-lista-conteudo:hover {
+    .menu-lista a {
+        color: black;
+    }
+
+    .menu-lista-conteudo .menu-lista-conteudo-botao{
+        border: 0;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        color: black;
+    }
+
+    .menu-lista-conteudo button:hover,
+    .menu-lista-conteudo a:hover {
         background-color: #FFFFFF;
     }
     
@@ -91,14 +104,8 @@
     }
 
     /* BOTAO DO FORMULARIO */
-    .container-um div:nth-child(3){
-        justify-content: center;
-    }
-
-    .formulario-botao {
+    .formulario div:nth-child(4) {
         width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
     }
 
     /* TABELA */

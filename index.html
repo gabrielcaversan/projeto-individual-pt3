@@ -28,9 +28,13 @@
                     </div>
                     <div class="menu-lista">
                         <div class="menu-x">X</div>
-                        <div class="menu-lista-conteudo">Cadastro de transações</div>
+                        <div class="menu-lista-conteudo">
+                            <a id="paginainicial" href="./index.html">Cadastro de transações</a>
+                        </div>
                         <div>|</div>
-                        <div class="menu-lista-conteudo">Limpar dados</div>
+                        <div class="menu-lista-conteudo">
+                            <button class="menu-lista-conteudo-botao" onclick="limparDados()">Limpar dados</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -44,7 +48,7 @@
                     <h2>Nova transação</h2>
                 </div>
                 
-                <form class="formulario">
+                <form class="formulario" onsubmit="testaFormulario(event)">
                     <div>
                         <label class="formulario-titulo" for="transacao">Tipo de transação</label>
                         <select class="formulario-conteudo" name="transacao" id="transacao">
@@ -55,18 +59,18 @@
 
                     <div>
                         <label class="formulario-titulo" for="mercadoria">Nome da mercadoria</label>
-                        <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input">
+                        <input class="formulario-conteudo" type="text" name="mercadoria" id="mercadoria" placeholder="Input" required autocomplete="off">
                     </div>
 
                     <div>
                         <label class="formulario-titulo" for="valor">Valor</label>
-                        <input class="formulario-conteudo" type="number" name="valor" id="valor" placeholder="R$ 0,00">
+                        <input class="formulario-conteudo" type="text" name="valor" id="valor" placeholder="R$ 0,00" required onkeyup="testaCampoValor(this)" autocomplete="off">
+                    </div>
+                    <div>
+                        <button class="formulario-botao" type="submit">Adicionar transação</button>
                     </div>
                 </form>
 
-                <div>
-                    <button class="formulario-botao" type="submit">Adicionar transação</button>
-                </div>
             </section>
             <!-- TABELA -->
             <section class="container-dois">
@@ -77,34 +81,11 @@
                         <div class="tabela-conteudo-titulo-mercadoria">Mercadoria</div>
                         <div class="tabela-conteudo-titulo-valor">Valor</div>
                     </div>
-
-                    <div class="tabela-conteudo">
-                        <div class="tabela-conteudo-operador">+</div>
-                        <div class="tabela-conteudo-mercadoria">Lorem ipsum dolor sit amet consectetur</div>
-                        <div class="tabela-conteudo-valor">R$ 12.999,99</div>
-                    </div>
-
-                    <div class="tabela-conteudo">
-                        <div class="tabela-conteudo-operador">-</div>
-                        <div class="tabela-conteudo-mercadoria">Quis nostrud exercitation</div>
-                        <div class="tabela-conteudo-valor">R$ 99,99</div>
-                    </div>
-
-                    <div class="tabela-conteudo">
-                        <div class="tabela-conteudo-operador">+</div>
-                        <div class="tabela-conteudo-mercadoria">Lorem ipsum</div>
-                        <div class="tabela-conteudo-valor">R$ 9,99</div>
-                    </div>
-
-                    <div class="tabela-conteudo-total">
-                        <div class="tabela-conteudo-operador">&nbsp;</div>
-                        <div class="tabela-conteudo-mercadoria">Total</div>
-                        <div class="tabela-conteudo-valor-total">R$ 12.909,99 <span>[LUCRO]</span></div>
-                    </div>
                 </div>
         </div>
         <!-- RODAPÉ -->
         <footer></footer>
     </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

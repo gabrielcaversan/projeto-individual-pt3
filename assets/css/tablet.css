@@ -25,30 +25,27 @@
 
     .formulario {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .formulario div:nth-child(2) {
-        width: 60%;
+        width: 55%;
     }
 
     .formulario div:nth-child(1),
     .formulario div:nth-child(3) {
-        width: 20%;
+        width: 18%;
         margin-left: 15px;
         margin-right: 15px;
     }
 
     /* BOTAO DO FORMULARIO */
-    .container-um div:nth-child(3) {
-        display: flex;
-        justify-content: right;
-    }
-
-    .formulario-botao {
-        width: 25%;
+    .formulario div:nth-child(4) {
         margin-right: 15px;
+        width: 25%;
     }
-
+    
     /* TABELA */
     .tabela-conteudo-titulo-valor {
         text-align: right;
