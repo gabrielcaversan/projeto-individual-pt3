@@ -116,4 +116,13 @@ function testaCampoValor(e) {
 
 //Ações
 desenhaExtrato();
+if (extratoTransacao.length === 0) {
+    document.querySelector('div.tabela').innerHTML +=
+    `<div class="tabela-conteudo tabela-dinamica">
+        <div class="tabela-conteudo-operador"></div>
+        <div class="tabela-conteudo-mercadoria">Nenhuma transação cadastrada!</div>
+        <div class="tabela-conteudo-valor"></div>
+    </div>`
+}
 desenhaExtratoTotal();
+
