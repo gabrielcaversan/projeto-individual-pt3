@@ -21,13 +21,13 @@
                     Controle Financeiro
                 </h1>
                 <nav class="menu">
-                    <div>
+                    <div onclick="abrirMenu()">
                         <div class="menu-bar"></div>
                         <div class="menu-bar"></div>
                         <div class="menu-bar"></div>
                     </div>
                     <div class="menu-lista">
-                        <div class="menu-x">X</div>
+                        <div class="menu-x" onclick="abrirMenu()">X</div>
                         <div class="menu-lista-conteudo">
                             <a id="paginainicial" href="./index.html">Cadastro de transações</a>
                         </div>
@@ -64,7 +64,8 @@
 
                     <div>
                         <label class="formulario-titulo" for="valor">Valor</label>
-                        <input class="formulario-conteudo" type="text" name="valor" id="valor" placeholder="R$ 0,00" required onkeyup="testaCampoValor(this)" autocomplete="off">
+                        <input class="formulario-conteudo" type="text" name="valor" id="valor" placeholder="R$ 0,00" required maxlength="18" onkeyup="testaCampoValor(this)" autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <!-- onkeypress irá fazer com que apenas números sejam escritos no input, evitando que consigam quebrar o input -->
                     </div>
                     <div>
                         <button class="formulario-botao" type="submit">Adicionar transação</button>
